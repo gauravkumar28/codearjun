@@ -26,12 +26,16 @@ public class JavaApplication36 {
         }
         while(i<s1.length()){
             if(s1.charAt(i)!=s2.charAt(j)){
-                j++;
+                
+                if(j>s2.length()-2){
+                 System.out.println("Both Sting is not rotation");
+                 return;
+                }
+                else
+                    j++;
             }
-            if(j>s1.length()-1){
-                System.out.println("Both Sting is not rotation");
-            return;
-            }
+            
+           
            else{
                
                for(i=0;i<s1.length();i++){
@@ -48,9 +52,10 @@ public class JavaApplication36 {
                }
                                
             }
+            
         }
         if(f==1)
-            System.out.println("Both Sting is in rotation");
+            System.out.println("rotation");
             
     }
     
